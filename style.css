@@ -377,16 +377,16 @@ nav a {
 }
 
 .footer-social {
-    display: flex; /* Размещаем иконки в ряд */
-    justify-content: center; /* Центрируем иконки */
+    display: flex;
+    justify-content: center;
 }
 
 .footer-social a {
-    margin: 0 10px; /* Отступы между иконками */
+    margin: 0 10px;
 }
 
 .footer-social img {
-    width: 30px; /* Размер иконок */
+    width: 30px;
     height: 30px;
 }
 
