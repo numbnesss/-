@@ -1,0 +1,392 @@
+body {
+    margin: 0;
+    background-color: #D1FCB3;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* корзина */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.modal-content h2{
+    font-family: "Kelly Slab", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.modal-content p{
+    font-family: "Kelly Slab", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* header */
+.background-header{
+    background-color: #6ADD1D;
+}
+header {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Jaro", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-family: "Kelly Slab", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons img {
+    max-width: 50px;
+}
+
+.icons a {
+    margin-left: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+/* main-comtent */
+.main-content-background {
+    padding: 20px;
+    height: 973px;
+    max-width: 1920px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/resource/img/mainbackground.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* season */
+.product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #D1FCB3;
+    justify-content: center;
+    font-family: "Kelly Slab", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.season h2 {
+    text-align: center;
+    font-family: "Kelly Slab", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.product-image {
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+.product-details {
+    text-align: left;
+}
+
+.product-title {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    margin-bottom: 10px;
+}
+
+.order-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* about-us */
+
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us h2{
+    padding-top: 20px;
+    text-align: center;
+    font-family: "Kelly Slab", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.about-text{
+    font-family: "Kelly Slab", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 20px;
+    max-width: 35%;
+    margin-left: 20px;
+}
+
+.about-img{
+    max-width: 50%;
+}
+
+.about-img img{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+/* deliviry and pay */
+
+.deliviry-pay h2{
+    padding-top: 20px;
+    text-align: center;
+    font-family: "Kelly Slab", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.pay{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.pay-content{
+    text-align: center;
+    max-width: 50%;
+    font-family: "Kelly Slab", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 20px;
+    max-width: 35%;
+    margin-left: 20px;
+}
+
+.pay-content h3{
+    font-family: "Kelly Slab", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.pay-img{
+    max-width: 50%;
+}
+
+
+.deliviry{
+    display: flex;
+    justify-content: space-around;
+}
+
+.deliviry-content{
+    text-align: center;
+    max-width: 50%;
+    font-family: "Kelly Slab", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 20px;
+    max-width: 35%;
+    margin-left: 20px;
+}
+
+.deliviry-content h3{
+    font-family: "Kelly Slab", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.deliviry-img{
+    max-width: 50%;
+}
+
+/* contact */
+.contacts{
+    margin-top: 100px;
+}
+.contact-content{
+    display: flex;
+    justify-content: center;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    font-family: "Kelly Slab", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contact a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.contact-text{
+    margin-left: 50px;
+}
+
+.contact-text h2{
+    text-align: center;
+    font-family: "Kelly Slab", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+}
+
+
+.contact-text p{
+    font-family: "Kelly Slab", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 25px;
+    text-align: center;
+}
+
+.contact-img img{
+    max-width: 400px;
+}
+
+/* Футер */
+.footer {
+    background-color: #769C5B;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav li {
+    margin: 0 15px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: black;   
+}
+
+.footer-logo {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 15px 0;
+    font-family: "Kelly Slab", sans-serif;
+}
+
+.footer-contacts {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.footer-contacts p {
+    margin: 5px 0;
+}
+
+.footer-social {
+    display: flex; /* Размещаем иконки в ряд */
+    justify-content: center; /* Центрируем иконки */
+}
+
+.footer-social a {
+    margin: 0 10px; /* Отступы между иконками */
+}
+
+.footer-social img {
+    width: 30px; /* Размер иконок */
+    height: 30px;
+}
+
