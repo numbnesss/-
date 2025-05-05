@@ -11,7 +11,7 @@ body {
 
 /* корзина */
 .modal {
-    display: none; 
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -30,14 +30,14 @@ body {
     width: 80%;
 }
 
-.modal-content h2{
+.modal-content h2 {
     font-family: "Kelly Slab", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-weight: bold;
 }
 
-.modal-content p{
+.modal-content p {
     font-family: "Kelly Slab", sans-serif;
     font-weight: 550;
     font-style: normal;
@@ -59,9 +59,11 @@ body {
 
 
 /* header */
-.background-header{
+.background-header {
     background-color: #6ADD1D;
+    position: sticky;
 }
+
 header {
     padding: 10px 20px;
     display: flex;
@@ -117,31 +119,13 @@ nav a {
     text-decoration: none;
 }
 
-/* main-comtent */
-.main-content-background {
-    padding: 20px;
-    height: 973px;
-    max-width: 1920px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/resource/img/mainbackground.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-/* season */
-.product {
+/* catalogbutton */
+.catalogbutton-content {
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #D1FCB3;
-    justify-content: center;
-    font-family: "Kelly Slab", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    justify-content: space-between;
 }
 
-.season h2 {
+h1 {
     text-align: center;
     font-family: "Kelly Slab", sans-serif;
     font-weight: 400;
@@ -150,22 +134,95 @@ nav a {
     font-size: 40px;
 }
 
-.product-image {
-    max-width: 300px;
-    margin-right: 20px;
+.filters-content{
+    display: flex;
+    align-items: center;
 }
 
-.product-details {
-    text-align: left;
+.filters-text{
+    font-family: "Kelly Slab", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 20px;
+    margin-left: 20px;
 }
 
-.product-title {
-    font-size: 1.2em;
-    margin-bottom: 5px;
+.filters-img img{
+    max-width: 70%;
 }
 
-.product-price {
-    margin-bottom: 10px;
+/* search */
+
+.search-bar {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;/* Прижимает элементы к правому краю */
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+    margin-right: 5px;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar button img {
+    width: 20px;
+    height: 20px;
+}
+
+.search-bar button:hover {
+    background-color: #f0f0f0;
+}
+
+/* catalog */
+.catalog{
+    margin-top: 100px;
+}
+
+.product-left{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.product-image{
+    max-width: 40%;
+}
+
+.product-details{
+    margin-left: 50px;
+}
+
+.product-title{
+    font-size: 30px;
+    font-family: "Kelly Slab", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.product-price{
+    font-size: 30px;
+    font-family: "Kelly Slab", sans-serif;
+    font-weight: 550;
+    font-style: normal;
 }
 
 .order-button {
@@ -175,167 +232,39 @@ nav a {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-/* about-us */
-
-.about-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.about-us h2{
-    padding-top: 20px;
-    text-align: center;
-    font-family: "Kelly Slab", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-}
-
-.about-text{
-    font-family: "Kelly Slab", sans-serif;
-    font-weight: 550;
-    font-style: normal;
-    font-size: 20px;
-    max-width: 35%;
-    margin-left: 20px;
-}
-
-.about-img{
-    max-width: 50%;
-}
-
-.about-img img{
-    max-width: 300px;
-    max-height: 300px;
-}
-
-/* deliviry and pay */
-
-.deliviry-pay h2{
-    padding-top: 20px;
-    text-align: center;
-    font-family: "Kelly Slab", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    padding-bottom: 20px;
-}
-
-.pay{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 30px;
-}
-
-.pay-content{
-    text-align: center;
-    max-width: 50%;
-    font-family: "Kelly Slab", sans-serif;
-    font-weight: 550;
-    font-style: normal;
-    font-size: 20px;
-    max-width: 35%;
-    margin-left: 20px;
-}
-
-.pay-content h3{
-    font-family: "Kelly Slab", sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 30px;
-}
-
-.pay-img{
-    max-width: 50%;
-}
-
-
-.deliviry{
-    display: flex;
-    justify-content: space-around;
-}
-
-.deliviry-content{
-    text-align: center;
-    max-width: 50%;
-    font-family: "Kelly Slab", sans-serif;
-    font-weight: 550;
-    font-style: normal;
-    font-size: 20px;
-    max-width: 35%;
-    margin-left: 20px;
-}
-
-.deliviry-content h3{
-    font-family: "Kelly Slab", sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 30px;
-}
-
-.deliviry-img{
-    max-width: 50%;
-}
-
-/* contact */
-.contacts{
-    margin-top: 100px;
-}
-.contact-content{
-    display: flex;
-    justify-content: center;
-}
-
-.contact{
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-    font-family: "Kelly Slab", sans-serif;
-    font-weight: 550;
-    font-style: normal;
-    font-size: 20px;
-    text-align: center;
-}
-
-.contact a{
-    text-decoration: none;
-    color: black;
     font-size: 25px;
 }
 
-.contact-text{
-    margin-left: 50px;
+.product-right{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 40px;
 }
 
-.contact-text h2{
-    text-align: center;
+.product-image-right{
+    max-width: 40%;
+}
+
+.product-details-right{
+    margin-right: 50px;
+}
+
+.product-title-right{
+    font-size: 30px;
     font-family: "Kelly Slab", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-weight: bold;
-    font-size: 40px;
-    margin: 0;
 }
 
-
-.contact-text p{
+.product-price-right{
+    font-size: 30px;
     font-family: "Kelly Slab", sans-serif;
     font-weight: 550;
     font-style: normal;
-    font-size: 25px;
-    text-align: center;
 }
 
-.contact-img img{
-    max-width: 400px;
-}
-
-/* Футер */
+/* футер */
 .footer {
     background-color: #769C5B;
     padding: 20px 0;
